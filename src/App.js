@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { MainContainer } from "./Pages";
+import { Neon } from "./Components";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Router>
+                {/* <Neon input={"Welcome ❤"} fontSize="1rem" color="white" />*/}
+                {/*<FloatCard title="welcome" desc="This is a useless text just for show off!"/>*/}
+                <Switch>
+                    <Route path="/" component={MainContainer} />
+
+                    <Route path="/*" component={() => <h1>404 Not Found</h1>} />
+                </Switch>
+            </Router>
+        </>
+    );
 }
 
 export default App;
