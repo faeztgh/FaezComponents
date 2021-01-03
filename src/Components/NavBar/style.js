@@ -1,9 +1,14 @@
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Badge from "@material-ui/core/Badge";
 
-const drawerWidth = 240;
+const drawerWidth = 190;
 const mainBgColor = "#E4F0FF";
 const txtColor = "#3F4644";
+const scWidth = window.innerWidth;
+const scHeight = window.innerHeight;
+const appBarFontSize =
+    scWidth < 800 ? (scHeight / scWidth) * 4.5 : (scWidth / scHeight) * 9;
+
 export const useStyle = makeStyles((theme) => ({
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
@@ -13,6 +18,7 @@ export const useStyle = makeStyles((theme) => ({
         }),
         background: mainBgColor,
         color: txtColor,
+        fontSize: appBarFontSize,
     },
     appBarShift: {
         marginLeft: drawerWidth,
@@ -53,7 +59,7 @@ export const useStyle = makeStyles((theme) => ({
         overflowX: "hidden",
         width: theme.spacing(7) + 1,
         [theme.breakpoints.up("sm")]: {
-            width: theme.spacing(9) + 1,
+            width: theme.spacing(7) + 1,
         },
         background: mainBgColor,
         color: txtColor,
