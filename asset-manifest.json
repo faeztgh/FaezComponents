@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/FaezComponents/static/css/main.1e8f98f8.chunk.css",
+    "main.js": "/FaezComponents/static/js/main.5cec02ba.chunk.js",
+    "main.js.map": "/FaezComponents/static/js/main.5cec02ba.chunk.js.map",
+    "runtime-main.js": "/FaezComponents/static/js/runtime-main.5909ddfe.js",
+    "runtime-main.js.map": "/FaezComponents/static/js/runtime-main.5909ddfe.js.map",
+    "static/js/2.5a628ecb.chunk.js": "/FaezComponents/static/js/2.5a628ecb.chunk.js",
+    "static/js/2.5a628ecb.chunk.js.map": "/FaezComponents/static/js/2.5a628ecb.chunk.js.map",
+    "index.html": "/FaezComponents/index.html",
+    "static/css/main.1e8f98f8.chunk.css.map": "/FaezComponents/static/css/main.1e8f98f8.chunk.css.map",
+    "static/js/2.5a628ecb.chunk.js.LICENSE.txt": "/FaezComponents/static/js/2.5a628ecb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5909ddfe.js",
+    "static/js/2.5a628ecb.chunk.js",
+    "static/css/main.1e8f98f8.chunk.css",
+    "static/js/main.5cec02ba.chunk.js"
+  ]
+}
