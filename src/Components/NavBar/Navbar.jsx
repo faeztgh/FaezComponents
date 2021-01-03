@@ -14,6 +14,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import DescriptionIcon from "@material-ui/icons/Description";
 import WallpaperIcon from "@material-ui/icons/Wallpaper";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
 import clsx from "clsx";
 
 import { useStyle } from "./style";
@@ -138,6 +139,14 @@ export const MyDrawer = (props) => {
                             <WallpaperIcon color="action" />
                         </ListItemIcon>
                         <ListItemText primary={"Float Card"} />
+                    </ListItem>
+                </Link>
+                <Link to="/darkmode">
+                    <ListItem button onClick={() => setCurrentPage("DarkMode")}>
+                        <ListItemIcon>
+                            <Brightness4Icon color="action" />
+                        </ListItemIcon>
+                        <ListItemText primary={"Dark/Light Mode"} />
                     </ListItem>
                 </Link>
             </List>

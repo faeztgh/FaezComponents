@@ -1,8 +1,9 @@
 import "./App.css";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { MainContainer } from "./Pages";
-import { Neon, NavbarContainer, FloatCard } from "./Components";
+import { Neon, NavbarContainer, FloatCard, DarkMode } from "./Components";
 import { GettingStart } from "./Pages";
+
 function App() {
     const scWidth = window.innerWidth;
     return (
@@ -22,7 +23,7 @@ function App() {
                         component={() => (
                             <Neon
                                 input="Welcome"
-                                fontSize={scWidth/50}
+                                fontSize={scWidth / 50}
                                 color="white"
                             />
                         )}
@@ -31,6 +32,15 @@ function App() {
                         path="/floatcard"
                         component={() => (
                             <FloatCard
+                                title="welcome"
+                                desc="This is a useless text just for show off!"
+                            />
+                        )}
+                    />
+                    <Route
+                        path="/darkmode"
+                        component={() => (
+                            <DarkMode
                                 title="welcome"
                                 desc="This is a useless text just for show off!"
                             />

@@ -1,7 +1,7 @@
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Badge from "@material-ui/core/Badge";
 
-const drawerWidth = 190;
+const drawerWidth = 220;
 const mainBgColor = "#E4F0FF";
 const txtColor = "#3F4644";
 const scWidth = window.innerWidth;

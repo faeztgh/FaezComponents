@@ -1,0 +1,108 @@
+.tm-container {
+    height: 80%;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.25s ease-out;
+}
+
+.light-mode nav {
+    transition: background-color 0.25s ease-out;
+}
+
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #f4f1eb;
+}
+
+.dark-mode nav {
+    background-color: #1b2938;
+}
+
+.tm-main {
+    text-align: center;
+    font-family: montserrat;
+    padding: 0.5em;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    width: 85%;
+    height: 100%;
+    padding: 100px 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: steelblue;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.toggle {
+    position: relative;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"].checkbox {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+}
+
+input[type="checkbox"].checkbox:checked + label {
+    left: 30px;
+}
+
+input[type="checkbox"].checkbox:focus-visible {
+    outline: solid 2px white;
+}
+
+input[type="checkbox"].checkbox + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: cyan;
+}
+
+.toggle-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.toggle-container > span {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+.toggle-container > span:last-child {
+    margin-top: 5px;
+}
