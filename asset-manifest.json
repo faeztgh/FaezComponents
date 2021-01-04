@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/FaezComponents/static/css/main.da0aac8f.chunk.css",
-    "main.js": "/FaezComponents/static/js/main.b3cf2960.chunk.js",
-    "main.js.map": "/FaezComponents/static/js/main.b3cf2960.chunk.js.map",
+    "main.css": "/FaezComponents/static/css/main.7d658a7b.chunk.css",
+    "main.js": "/FaezComponents/static/js/main.bef64d99.chunk.js",
+    "main.js.map": "/FaezComponents/static/js/main.bef64d99.chunk.js.map",
     "runtime-main.js": "/FaezComponents/static/js/runtime-main.5909ddfe.js",
     "runtime-main.js.map": "/FaezComponents/static/js/runtime-main.5909ddfe.js.map",
-    "static/js/2.e4a0c5eb.chunk.js": "/FaezComponents/static/js/2.e4a0c5eb.chunk.js",
-    "static/js/2.e4a0c5eb.chunk.js.map": "/FaezComponents/static/js/2.e4a0c5eb.chunk.js.map",
+    "static/js/2.0abbcf7f.chunk.js": "/FaezComponents/static/js/2.0abbcf7f.chunk.js",
+    "static/js/2.0abbcf7f.chunk.js.map": "/FaezComponents/static/js/2.0abbcf7f.chunk.js.map",
     "index.html": "/FaezComponents/index.html",
-    "static/css/main.da0aac8f.chunk.css.map": "/FaezComponents/static/css/main.da0aac8f.chunk.css.map",
-    "static/js/2.e4a0c5eb.chunk.js.LICENSE.txt": "/FaezComponents/static/js/2.e4a0c5eb.chunk.js.LICENSE.txt"
+    "static/css/main.7d658a7b.chunk.css.map": "/FaezComponents/static/css/main.7d658a7b.chunk.css.map",
+    "static/js/2.0abbcf7f.chunk.js.LICENSE.txt": "/FaezComponents/static/js/2.0abbcf7f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5909ddfe.js",
-    "static/js/2.e4a0c5eb.chunk.js",
-    "static/css/main.da0aac8f.chunk.css",
-    "static/js/main.b3cf2960.chunk.js"
+    "static/js/2.0abbcf7f.chunk.js",
+    "static/css/main.7d658a7b.chunk.css",
+    "static/js/main.bef64d99.chunk.js"
   ]
 }
