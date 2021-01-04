@@ -41,7 +41,7 @@ function DarkMode() {
                         <span className="toggle">
                             <ToggleBtn
                                 id="bg-toggle"
-                                checked={darkMode}
+                                darkMode={darkMode}
                                 onClick={() =>
                                     setDarkMode((prevMode) => !prevMode)
                                 }
@@ -54,6 +54,8 @@ function DarkMode() {
                 <main className="tm-main">
                     <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
                     <h2>Toggle the switch to see the change</h2>
+                    <br/>
+                    <h4>Your choice will be saved</h4>
                 </main>
             </div>
         </div>

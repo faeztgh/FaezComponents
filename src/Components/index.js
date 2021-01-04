@@ -1,4 +1,5 @@
 export { default as Neon } from "./Neon";
+export { default as Buttons } from "./Buttons";
 export { default as DarkMode } from "./DarkMode";
 export { default as FloatCard } from "./FloatCard";
 export { default as ToggleBtn } from "./ToggleBtn";

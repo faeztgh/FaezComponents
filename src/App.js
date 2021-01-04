@@ -1,7 +1,13 @@
 import "./App.css";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { MainContainer } from "./Pages";
-import { Neon, NavbarContainer, FloatCard, DarkMode } from "./Components";
+import {
+    Neon,
+    NavbarContainer,
+    FloatCard,
+    DarkMode,
+    Buttons,
+} from "./Components";
 import { GettingStart } from "./Pages";
 
 function App() {
@@ -46,6 +52,7 @@ function App() {
                             />
                         )}
                     />
+                    <Route path="/buttons" component={() => <Buttons />} />
                     <Route path="/*" component={() => <h1>404 Not Found</h1>} />
                 </Switch>
             </Router>

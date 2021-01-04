@@ -18,12 +18,11 @@
     text-align: center;
 }
 
-input.check-toggle-round-flat:checked ~ .off {
-    color: #f32552;
-}
-
 input.check-toggle-round-flat:checked ~ .on {
     color: #fff;
+}
+input.check-toggle-round-flat:checked ~ .off {
+    color: #f32552;
 }
 
 .switch > span.on {

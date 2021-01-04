@@ -11,6 +11,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import EditAttributesIcon from "@material-ui/icons/EditAttributes";
 import Divider from "@material-ui/core/Divider";
 import DescriptionIcon from "@material-ui/icons/Description";
 import WallpaperIcon from "@material-ui/icons/Wallpaper";
@@ -36,6 +37,7 @@ const Navbar = (props) => {
                 classes={classes}
                 open={open}
                 handleDrawerOpen={handleDrawerOpen}
+                handleDrawerClose={handleDrawerClose}
             />
             <MyDrawer
                 classes={classes}
@@ -51,7 +53,7 @@ const Navbar = (props) => {
 export default Navbar;
 
 export const MyAppBar = (props) => {
-    const { classes, open, handleDrawerOpen } = props;
+    const { classes, open, handleDrawerOpen, handleDrawerClose } = props;
     return (
         <AppBar
             color="inherit"
@@ -72,7 +74,7 @@ export const MyAppBar = (props) => {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Link to="/">
+                <Link to="/" onClick={handleDrawerClose}>
                     <h1>Faez Components</h1>
                 </Link>
             </Toolbar>
@@ -109,10 +111,7 @@ export const MyDrawer = (props) => {
             <Divider />
             <List>
                 <Link to="/gettingstart">
-                    <ListItem
-                        button
-                        onClick={() => setCurrentPage("GettingStart")}
-                    >
+                    <ListItem button onClick={handleDrawerClose}>
                         <ListItemIcon>
                             <DescriptionIcon color="primary" />
                         </ListItemIcon>
@@ -123,7 +122,7 @@ export const MyDrawer = (props) => {
             <Divider />
             <List>
                 <Link to="/neon">
-                    <ListItem button onClick={() => setCurrentPage("Neon")}>
+                    <ListItem button onClick={handleDrawerClose}>
                         <ListItemIcon>
                             <WbIncandescentIcon color="action" />
                         </ListItemIcon>
@@ -131,10 +130,7 @@ export const MyDrawer = (props) => {
                     </ListItem>
                 </Link>
                 <Link to="/floatcard">
-                    <ListItem
-                        button
-                        onClick={() => setCurrentPage("FloatCard")}
-                    >
+                    <ListItem button onClick={handleDrawerClose}>
                         <ListItemIcon>
                             <WallpaperIcon color="action" />
                         </ListItemIcon>
@@ -142,11 +138,19 @@ export const MyDrawer = (props) => {
                     </ListItem>
                 </Link>
                 <Link to="/darkmode">
-                    <ListItem button onClick={() => setCurrentPage("DarkMode")}>
+                    <ListItem button onClick={handleDrawerClose}>
                         <ListItemIcon>
                             <Brightness4Icon color="action" />
                         </ListItemIcon>
                         <ListItemText primary={"Dark/Light Mode"} />
+                    </ListItem>
+                </Link>
+                <Link to="/buttons">
+                    <ListItem button onClick={handleDrawerClose}>
+                        <ListItemIcon>
+                            <EditAttributesIcon color="action" />
+                        </ListItemIcon>
+                        <ListItemText primary={"Buttons"} />
                     </ListItem>
                 </Link>
             </List>
