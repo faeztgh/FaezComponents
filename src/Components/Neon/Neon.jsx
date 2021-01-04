@@ -1,6 +1,6 @@
 import React from "react";
 import { v1 } from "uuid";
-import "./neon.css";
+import "./neon.scss";
 
 const Neon = (props) => {
     const {

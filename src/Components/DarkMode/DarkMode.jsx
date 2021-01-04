@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import ToggleBtn from "../ToggleBtn";
-import "./dark-mode.css";
+import "./dark-mode.scss";
 import { FaRegMoon } from "react-icons/fa";
 import { BiSun } from "react-icons/bi";
 function DarkMode() {

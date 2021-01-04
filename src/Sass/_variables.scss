@@ -1,0 +1,12 @@
+$primaryBtn: rgb(0, 255, 234);
+$secondryBtn: rgb(255, 0, 98);
+$boneColor: #f4f1eb;
+$mineshaftColor: #1f1f1f;
+$mineshaftColor-light: #353535ef;
+@mixin flexCenter($background, $direction, $justify, $align-items) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align-items;
+    background: $background;
+    flex-direction: $direction;
+}

@@ -26,38 +26,36 @@
 
     font-family: "Dancing Script", cursive;
     font-weight: bolder;
-}
 
-p {
-    color: rgb(251, 232, 255);
-}
+    span {
+        font-size: 3.5em;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
 
-.neon span {
-    font-size: 3.5em;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-}
+    p {
+        color: rgb(251, 232, 255);
+        span {
+            opacity: 0.33;
+            animation: turnOn forwards step-end;
 
-p span {
-    opacity: 0.33;
-    animation: turnOn forwards step-end;
-}
+            &:nth-child(1) {
+                animation-delay: 0.3s;
+            }
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+            }
 
-p span:nth-child(1) {
-    animation-delay: 0.3s;
-}
-
-p span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-p span:nth-child(3) {
-    animation-delay: 0.1s;
-}
-/* flicking char */
-p span:nth-last-child(1) {
-    animation: turnOn 3.4s forwards step-end,
-        flicker var(--animation-time) infinite step-end 2s;
+            &:nth-child(3) {
+                animation-delay: 0.1s;
+            }
+            /* flicking char */
+            &:nth-last-child(1) {
+                animation: turnOn 3.4s forwards step-end,
+                    flicker var(--animation-time) infinite step-end 2s;
+            }
+        }
+    }
 }
 
 @keyframes turnOnBorder {

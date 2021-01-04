@@ -1,5 +1,5 @@
 import React from "react";
-import "./toggle-btn.css";
+import "./toggle-btn.scss";
 
 function ToggleBtn(props) {
     const { id, on, off, onClick } = props;

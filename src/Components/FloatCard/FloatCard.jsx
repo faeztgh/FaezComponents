@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./float-card.css";
+import "./float-card.scss";
 
 function PresentCard(props) {
     const { image, title, desc } = props;
